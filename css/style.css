@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fredericka the Great', cursive;
+    line-height: 2;
+    text-align: center;
+}
+
+.intro-image{
+    background-attachment: fixed;
+    background-image: url('../img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro-image__text{
+    display: inline-block;
+    padding: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px black;
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    80%{
+        transform: translate(50px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.intro-image__text a {
+    color:rgb(106, 60, 102);
+    text-decoration: none;
+}
+
+.intro-text{
+    background-color:#a47b7d;
+    color:#4a4942;
+    display: flex;
+    align-items: center;
+    clip-path:polygon(31% 0, 67% 0, 99% 14%, 100% 83%, 70% 100%, 30% 100%, 0 84%, 0 14%);
+    justify-content: center;
+    height: 250px;
+    padding: 0 10rem;
+    margin: -5rem;
+}
+.intro-text__textbox h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.packaging-image{
+    background-attachment: fixed;
+    background-image: url('../img/img2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.packaging-image__text{
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 0 0 1px black;
+}
+
+.packaging-image__text a{
+    background-color: #939ca16d;
+    border:2px solid #939ca1;
+    color:rgb(239, 132, 74);
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.6s ease-in-out;
+}
+.packaging-image__text a:hover{
+    transform: scale(1.1);
+}
+
+.packaging-text{
+    background-color:#988c7c;
+    color:antiquewhite;
+    display: flex;
+    align-items: center;
+    clip-path:polygon(31% 0, 67% 0, 99% 14%, 100% 83%, 70% 100%, 30% 100%, 0 84%, 0 14%);
+    justify-content: center;
+    height: 250px;
+    padding: 0 10rem;
+    margin: -5rem
+}
+.packaging_text__textbox h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tutorials-image{
+    background-attachment: fixed;
+    background-image: url('../img/img3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__text{
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 0 0 1px black;
+}
+.tutorials-image__text a{
+    background-color: #e0d5d459;
+    border:2px solid #e0d5d4;
+    color:rgb(86, 106, 109);
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.6s ease-in-out;
+}
+.tutorials-image__text a:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    background-color:rgb(121, 87, 106);
+    color: antiquewhite;
+    font-size: 1.3rem;
+    margin-top: -5rem;
+    padding: 4rem;
+    text-align: center;
+    clip-path: polygon(33% 0, 66% 0, 100% 14%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+}
+
+.footer ul li{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a{
+    color:black;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    color: bisque;
+    display: inline-block;
+    transform: scale(1.1);
+}
